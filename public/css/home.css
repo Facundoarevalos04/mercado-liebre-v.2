@@ -1,16 +1,54 @@
-footer{
+
+body{
+    font-size: 12px;
     font-family: 'Open Sans', sans-serif;
-    background-color: grey;
+    background-color: #ebebeb;
 }
 
 img{
     max-width: 370px;
 }
 header{ 
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fcdb01;
+    background-color: #EAC926;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
+
+a{
+    text-decoration: none;
+    color: black;
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;;
+}
+header i{
+    color: black;
+}
+
+article{
+    text-align: center;
+}
+footer{
+    text-align: center;
    
+}
+ol{
+    list-style-type: none;
+}
+.este{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.compra{
+    text-align: center;
+
+}
+.hamburguesa{
+    text-align: center;
+    color: #1259c3;;
 }
