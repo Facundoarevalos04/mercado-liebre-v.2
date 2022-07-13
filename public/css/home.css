@@ -1,54 +1,110 @@
-
-body{
+body {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     background-color: #ebebeb;
 }
 
-img{
-    max-width: 370px;
+main {
+    max-width: 90%;
 }
-header{ 
+
+img {
+    max-width: 300px;
+}
+
+header {
     background-color: #EAC926;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-footer i{
+
+footer i {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #1259c3;;
+    color: #1259c3;
 }
-header i{
+
+header i {
     color: black;
 }
 
-article{
-    text-align: center;
+article {
+    width: 300px;
+    background-color: white;
+    margin-bottom:10px ;
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
 }
-footer{
-    text-align: center;
-   
+
+article i {
+    padding-left: 0px;
+    color: rgb(74, 240, 74);
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+
 }
-ol{
-    list-style-type: none;
+
+article p {
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 0;
 }
-.este{
-    font-size: 24px;
-}
-.precio{
-    font-size: 18px;
-}
-.descuento{
-    font-size: 16px;
-}
-.compra{
+
+footer {
     text-align: center;
 
 }
-.hamburguesa{
-    text-align: center;
-    color: #1259c3;;
+div button{
+    color: #1259c3;
 }
+ol {
+    list-style-type: none;
+}
+
+.section__h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: rgb(74, 240, 74);
+}
+
+.compra {
+    text-align: center;
+}
+
+.div_article {
+    border-top: solid 1px #ebebeb;
+}
+
+.hamburguesa {
+    text-align: center; 
+}
+
+@media (min-width: 768px) {
+     .hamburguesa{
+        display: none;
+     }
+    article {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    article i {
+        color: rgb(74, 240, 74);
+        font-size: 25px;
+    }
+}    
