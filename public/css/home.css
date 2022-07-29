@@ -1,126 +1,251 @@
-@media (min-width: 320px){
+@media (min-width: 320px) {
+
+  
+    body {
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #ebebeb;
+    }
+
+    *{
+        margin: 0;
+        box-sizing: border-box
+    }
     
-body {
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #ebebeb;
-}
-.site{
-    display: none;
-}
-.login{
-    display: none;
-}
-main {
-    max-width: 90%;
-}
-div img{
-    box-shadow: ​0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
-}
-img {
-    max-width: 300px;
-}
 
-header {
-    background-color: #EAC926;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-footer i {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #1259c3;
-}
-
-header i {
-    color: black;
-}
-
-article {
-    width: 300px;
-    background-color: white;
-    margin-bottom:10px ;
-    display: flex;
-    flex-direction:column ;
-    justify-content: flex-start;
-}
-
-article i {
-    padding-left: 0px;
-    color: rgb(74, 240, 74);
-    font-size: 15px;
-    padding-top: 10px;
-    padding-left: 10px;
-
-}
-
-article p {
-    display: flex;
-    padding-left: 10px;
-    padding-bottom: 0;
-}
-
-footer {
-    text-align: center;
-
-}
-
-ol {
-    list-style-type: none;
-}
-
-.section__h2 {
-    font-size: 24px;
-}
-
-.precio {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-    color: rgb(74, 240, 74);
-}
-
-.compra {
-    text-align: center;
-}
-
-.div_article {
-    border-top: solid 1px #ebebeb;
-}
-
-.hamburguesa {
-    text-align: center; 
-}
-}
-@media (min-width: 768px) {
-    .login{
-        display: block;
+    .main__section__article i{
+        position:absolute;
+        font-size: 16px;
+        padding: 5px;
+        right: 30px;
+        top: -15px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        border-radius: 50% ;
+        background-color: white;
     }
-    .site{
-        display: block;
+    .img__banner{
+        width: 100%
     }
-     .hamburguesa{
+    .site {
         display: none;
-     }
-    .div_article{
-        box-shadow: ​0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
     }
-    article {
-        width: 90%;
+
+    .login {
+        display: none;
+    }
+
+    .header__logo__search-var{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    div img {
+        width: 47%;
+    }
+    header input{
+        width: 50%;
+        border: none;
+        border-radius: 3px;
+        margin-left: 10px;
+    }
+
+
+    header {
+        background-color: #EAC926;
         padding-bottom: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 2px;
+        color: black;
+    }
+
+    footer i {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #1259c3;
+    }
+
+    header i {
+        color: black;
+    }
+
+    article {
+        width: 300px;
+        background-color: white;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 8px;
+    }
+
+    article i {
+        color: rgb(74, 240, 74);
+    }
+
+    article p {
+        display: inline-block;
+        padding-left: 10px;
+        padding-bottom: 0;
+
+    }
+
+    footer {
+        text-align: center;
+
+    }
+
+    ol {
+        list-style-type: none;
+    }
+
+    .main__section__h2 {
+        font-size: 24px;
+    }
+
+    .precio {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
+
+    .descuento {
+        font-size: 16px;
+        color: rgb(74, 240, 74);
+    }
+
+    .descripcion {
+        display: block;
+        padding: 10px;
+    }
+
+    .compra {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .div_article {
+        border-top: solid 1px #ebebeb;
+        position: relative;
+    }
+
+    .hamburguesa {
+        text-align: center;
+    }
+
+   
+}
+
+@media (min-width: 768px) {
+
+    a {
+        margin-left: 6px;
+    }
+    header input{
+        display: none;
+    }
+
+    header input {
+        display: block;
+    }
+
+    .main__section__article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header div {
+        display: inline-block
+    }
+
+    header section {
+        justify-content: space-between;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .main__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__h2__ofers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .login {
+        display: block;
+    }
+
+    .div__site {
+        margin-right: 130px;
+    }
+
+    .site {
+        display: block;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+    .img__banner{
+        width: 100%;
+    }
+    .compra{
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+    article {
+        width: 300px;
+        padding-bottom: 10px;
+        margin: 10px;
     }
 
     footer {
         text-align: center;
     }
+
     article i {
         color: rgb(74, 240, 74);
         font-size: 25px;
     }
-}    
+}
+
+@media (min-width: 1024px) {
+    .main__section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header a{
+        font-size: 14px;
+    }
+    article {
+        width: 230px;
+    }
+    div img{
+        width: 340px;
+    }
+    .div__site{
+        margin-right: 270px;
+    }
+    .section__h2__ofers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
