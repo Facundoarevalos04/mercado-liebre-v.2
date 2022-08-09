@@ -1,0 +1,64 @@
+body{
+    background-color: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color: #EAC926;
+}
+header img{
+    width: 90px;
+    height: 30px;
+    margin: 5px;
+}
+main{
+    display: flex;
+}
+.botones button{
+    background-color: #3483fa;
+    border-color: transparent;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+    color: #fff;
+}
+.radio{
+    display: inline-block;
+}
+.contraseña input{
+    height: 30px;
+    width: 30%;
+    margin-left: 35px;
+}
+.main__div__dat--per input{
+    border: none;
+    margin: 12px;
+    margin-bottom: 25px;
+    width: 275px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+@media(min-width: 768px){
+
+    header img{
+        height: 50px;
+        width: 120px;
+        margin: 5px;
+    }
+    .main__form__checkbox p{
+        font-size: 17px
+    }
+    .radio{
+        display: inline-block;
+        font-size: 17px;
+    }
+    .botones button{
+        background-color: #3483fa;
+        border-color: transparent;
+        border-radius: 5px;
+        width: 350px;
+        height: 30px;
+        color: #fff;
+        margin-left: 15px;
+    }
+}
