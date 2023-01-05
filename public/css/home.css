@@ -39,6 +39,19 @@
     }
 
     /*MAIN*/
+
+    .main__section {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .section__h2__ofers{
+        margin-bottom: 50px;
+    }
     .main__section__article i{
         position:absolute;
         font-size: 16px;
@@ -50,6 +63,12 @@
         border: 1px solid #39b54a;
         border-radius: 50% ;
         background-color: white;
+        transition: 1s;
+    }
+
+    .main__section__article:hover i{
+        transform: rotate(360deg) ;
+        box-shadow: 0 0 5px rgba(93, 201, 31, 0.5);
     }
     
     .site {
@@ -89,39 +108,50 @@
     }
 
     article i {
-        color: rgb(74, 240, 74);
+        color: #39b54a;
     }
+    
 
-    article p {
-        display: inline-block;
+    .main__section__article {
+        align-self: flex-start;
+        border-radius: 10px;
+      }
+
+    .main__section__article p {
+      padding-left: 8px;
+    }
+    .div_article h4 {
         padding-left: 10px;
-        padding-bottom: 0;
-
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .main__section__article:hover h4 {
+       height: 40px;
+       transition: 0.5s;
     }
 
     footer {
         text-align: center;
-
     }
 
     .main__section__h2 {
         font-size: 24px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: rgb(94, 93, 93);
     }
 
     .precio {
         font-size: 18px;
         margin-top: 10px;
-        margin-bottom: 13px;
+        margin-bottom: 5px;
     }
 
     .descuento {
         font-size: 16px;
-        color: rgb(74, 240, 74);
-    }
-
-    .descripcion {
-        display: block;
-        padding: 10px;
+        color: #39b54a;
     }
 
     .compra {
@@ -154,7 +184,8 @@
         display: block;
     }
 
-    .main__section__article{
+    
+    .main__section__article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .header__logo {
@@ -216,18 +247,44 @@
 
     footer {
         text-align: center;
+        display: flex;
     }
 
     article i {
-        color: rgb(74, 240, 74);
+      
         font-size: 25px;
     }
 }
 
 @media (min-width: 1024px) {
     .main__section {
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .section__h2__ofers {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer{
+        display: flex;
+        padding-top: 70px;
+    }
+
+    .footer i:hover{
+        transition: 1s;
+        color: rgb(197, 197, 5)
     }
 
     header a{
